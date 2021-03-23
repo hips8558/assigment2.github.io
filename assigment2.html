@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">        <!-- This is English language --->
+  <head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+    <meta charset="utf-8">  <!-- It includes ALL the character set of English-->
+                            <!-- AA, BB, aa, bb, 1, 2, !, @, # etc. -->
+
+    <!-- For a Responsive website - you need to input the below mentioned code -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- You need to copy paste few CDM codes -->
+
+    <!-- Latest compiled and minified CSS -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- to make my carasoul images responsive -->
+<style>
+  
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+    p
+    {
+  font-family:'PT Sans', sans-serif;
+  text-align: left;
+  font-size: 130%;
+}
+    h4
+    {
+  font-family:'Dancing Script', cursive;
+  text-align: center;
+  font-size: 200%;
+}
+    h3 
+    {
+  font-family:'Dancing Script', cursive;
+  text-align: center;
+  font-size: 300%;
+}
+   h2
+    {
+  font-family:'PT Sans', sans-serif;
+  text-align: left;
+  font-size: 200%;
+}
+   h1
+    {
+  font-family:'PT Sans', sans-serif;
+  text-align: left;
+  font-size: 250%;
+}
+   h5
+    {
+  font-family:'PT Sans', sans-serif;
+  text-align: center;
+  font-size: 100%;
+}
+   h6
+    {
+  font-family:'PT Sans', sans-serif;
+  text-align: center;
+  font-size: 80%;
+}
+   button
+    {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+   a
+    {
+  font-family:'PT Sans', sans-serif;
+  text-align: center;
+  font-size: 100%;
+}
+b
+    {
+  font-family:'PT Sans', sans-serif;
+  text-align: center;
+  font-size: 150%;
+} 
+
+ #more {display: none;}
+input[type=image], img {
+  margin-top: 0px;
+  margin-bottom: 50px;
+} 
+ .fa {
+  padding: 15px;
+  font-size: 15px;
+  width: 10px;
+  height: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa:hover {
+    opacity: 0.5;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  padding: 20px;
+}
+    td.middle {
+       vertical-align: middle;
+    }
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+ 
+  </style>
+  <script>
+    // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+    function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+  </script>
+
+</head>
+
+<!-- Almost done -- Lets start the program -->
+
+<!--- ----------------------------------------------------------------------------- -->
+<body>
+  
+  <!-- Navbar codes -->
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand/logo -->
+  
+  <!-- Links -->
+  <ul class="navbar-nav ml-auto">  <!-- will do a small styling inorder to move your nav elements to right side of the navbar -->
+    <!-- ML stands for margin left, MR - Margin right -->
+    <!-- The code works opposite here, if you wanna move things to right, use ML and if you wanna move things to left, use MR -->
+
+    <li class="nav-item">
+      <a class="nav-link" href="assigment2.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Invitation.html">Invitation</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Eventscheduce.html">Event scheduce</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="lifeatfu.html">Life at FU</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="foodpreference.html">Food preference</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Register.html">Register</a>
+    </li>
+  </ul>
+
+  <!-- I need a Search input form -->
+   <form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-secondary" type="submit">Search</button>
+  </form>
+</nav>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+
+    <!-- I have 3 corasoul images - 0,1,2 -->
+
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+
+  </ul>
+  <div class="carousel-inner">
+    <!-- Carasoul slide 1-->
+    <div class="carousel-item active">
+      <img src="C:\Users\Admin\Desktop\GD1401\images\1212-01.png">
+      <div class="carousel-caption">
+        <h3 style="font-size: 100px">F-CAM</h3>
+        <h4 style="font-size: 70px">“Are you ready?”</h4>
+        <h5 style="font-style: 150px">8am to 22pm-
+          March 20, 2020</h5>
+          <br>
+        <button type="button" class="btn btn-danger">Register</button> 
+         <table border="0" cellpadding="0" cellspacing="0" style="height: 300px;">
+          <tr>
+           <td class="middle"></td>
+         </tr>
+       </table>
+      </div>   
+    </div>
+
+
+    <div class="carousel-item">
+      <!-- Carasoul slide 2 -->
+      <img src= "C:\Users\Admin\Desktop\GD1401\images\000000-07-01-01.png">
+      <div class="carousel-caption">
+        <h3>What awaits you?</h3>
+        <br>
+        <h4>"Believe we won't let you down!"</h4>
+        <table border="0" cellpadding="0" cellspacing="0" style="height: 350px;">
+          <tr>
+           <td class="middle"></td>
+         </tr>
+       </table>
+      </div>   
+    </div>
+ <div class="carousel-item">
+      <!-- Carasol slide 3 -->
+      <img src= "C:\Users\Admin\Desktop\GD1401\images\11111-01.png">
+      <div class="carousel-caption">
+        <h3>Do not miss</h3>
+        <br>
+        <h4>"Interesting things that happen"</h4>
+        <br>
+        <table border="0"cellpadding="0"cellspacing="0"style="height: 350px;">
+          <tr>
+           <td class="middle"></td>
+         </tr>
+       </table>
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+<section>
+  <br>
+  <h1 style="text-align: center;">About us</h1>
+  <!-- I need a small line under the heading -- styling element as per my wireframe -->
+  <hr class="w-50">
+  <br>
+  <br>
+<div class="container">
+  <div class="row">
+
+    <!-- Image content in left side -->
+    <div class="col">
+      <img src="C:\Users\Admin\Desktop\GD1401\images\00.png" width="400" height="400">
+    </div>
+        
+        <!-- Body content in right side-->
+        <div class="col">
+          <br>
+      <h2>Hello students k16</h2>
+      <br>
+      <p>“🍁𝐅-𝐂𝐚𝐦𝐩 is a new student welcoming event held annually by previous course students with the companionship and advisors of the international cooperation and personal development department - 𝐈𝐂-𝐏𝐃𝐏. 𝐅-𝐂𝐚𝐦𝐩 is always the event most expected<span id="dots">...</span><span id="more"> by FPT students, not only bringing excitement and novelty,-also spread the inherent enthusiasm and energy of FPT students.
+<br>
+🍁 More specifically, 𝐅-𝐂𝐚𝐦𝐩 𝟐𝟎𝟐𝟎 is also an important milestone marking the enthusiastic and bloody journey of thousands of people in the BTC team during the past years. 𝐅-𝐂𝐚𝐦𝐩 𝟐𝟎𝟐𝟎 will be held on / 𝟏𝟏, promising to leave many unforgettable memories of F school culture - where students burn together with passion, aspiration to create moments The most memorable engraving for youth in Hoa Lac 𝐂𝐚𝐦𝐩𝐮𝐬.
+<br>
+🍁 𝐅-𝐂𝐚𝐦𝐩 𝟐𝟎𝟐𝟎 with the theme "4 Musketeers" will bring a new wind to the welcoming festival, blowing into the hearts of K16 students the most positive energy, the freshest, marking the column The year has passed a fire in the hearts of new students 𝐊𝟏𝟔 in particular and all students 𝐅𝐏𝐓𝐔 in general. From there, generations of students can bond, share together, create a favorable momentum for the journey of learning and students. activities of new students at FPT University, Ha Noi."</span></p>
+
+<button onclick="myFunction()" id="myBtn" type="button" class="btn btn-danger">Read more</button>
+    </div>
+    </div>
+    <br>
+    <div class="col">
+          <br>
+      <h2>Recommended for you</h2>
+      <br>
+    <div class="row">
+      <!--col 1-->
+
+      <div class="col">
+       <img src="C:\Users\Admin\Desktop\GD1401\images\8-2-08.png" width="220" height="120">
+      <br>
+        <h5>Welcome activities</h5>
+      </div>
+
+      <div class="col">
+       <img src="C:\Users\Admin\Desktop\GD1401\images\8-4-08.png" width="220" height="120">
+      <br>
+        <h5>Host enthusiastic program</h5>
+      </div> 
+
+     <div class="col">
+       <img src="C:\Users\Admin\Desktop\GD1401\images\8-1-08.png" width="220" height="120">
+      <br>
+        <h5>Interesting entertainment activities</h5>
+      </div>
+
+      <div class="col">
+       <img src="C:\Users\Admin\Desktop\GD1401\images\8-3-08.png" width="220" height="120">
+      <br>
+        <h5>The most awaited part</h5>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <br>
+  <h1 style="text-align: center;">Introduct</h1>
+  <!-- I need a small line under the heading -- styling element as per my wireframe -->
+  <hr class="w-50">
+  <br>
+  <br>
+<div class="container">
+  <div class="row">
+
+    <!-- Image content in left side -->
+    
+        
+        <!-- Body content in right side-->
+        <div class="col">
+          <br>
+      <h2>📣 [F-Camp 2020] FLASHMOB LESSON</h2>
+      <br>
+      <p>“If you are not sure about F-Camp 2020's dance, SCDC will give all K16 trainees the whole dance this year."</span></p>
+
+<button onclick="myFunction()" id="myBtn"type="button" class="btn btn-danger">Review</button>
+    </div>
+  <div class="col">
+      <video width="400" controls>
+       <source src="C:\Users\Admin\Desktop\GD1401\images\hưhuwuaajdjjdahuwhdjaekgjajdbhbaduuwjsjajdjahdhdak.mp4" type="video/mp4">
+      </video>
+  </div>
+    </div>
+
+<section>
+<div class="container">
+  <div class="row">
+    <div class="col">
+          <br>
+      <h1 style="text-align: center;">Activities</h1>
+      <hr class="w-50">
+      <br>
+    <div class="row">
+      <!--col 1-->
+
+      <div class="col">
+       <img src="C:\Users\Admin\Desktop\GD1401\images\9-1-09.png" width="330" height="450">
+     </div>
+
+      <div class="col">
+       <img src="C:\Users\Admin\Desktop\GD1401\images\9-2-09.png" width="330" height="450">
+     </div>
+
+      <div class="col">
+       <img src="C:\Users\Admin\Desktop\GD1401\images\9-3-09.png" width="330" height="450">
+     </div>
+
+      <div class="col">
+       <img src="C:\Users\Admin\Desktop\GD1401\images\9-4-09.png" width="330" height="450">
+
+     </div>
+      <div class="col">
+       <img src="C:\Users\Admin\Desktop\GD1401\images\9-5-09.png" width="330" height="450">
+     </div>
+
+      <div class="col">
+       <img src="C:\Users\Admin\Desktop\GD1401\images\9-6-09.png" width="330" height="450">
+      </div>
+  <br>
+  <br>
+  <br>
+      <button onclick="myFunction()" id="myBtn"type="button" class="btn btn-danger">Read more</button>
+    </div>
+  </div>
+</div>
+<br>
+<section>
+  <br>
+  <h1 style="text-align: center;">Food preference</h1>
+  <br>
+  <!-- I need a small line under the heading -- styling element as per my wireframe -->
+  <hr class="w-50">
+  <br>
+  <br>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img id="myImg" src="C:\Users\Admin\Desktop\GD1401\images\1402-04.png" alt="Snow" style="width:100%">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+      <div class="container">
+        <h2>Crepes</h2>
+        <p class="title">Minh Được Phước</p>
+        <p>A crêpe or crepe is a type of very thin pancake. Crêpes are usually of two types: sweet crêpes and savoury galettes.</p>
+        <p><button href="https://www.facebook.com/joseph.healthyfood" class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img id="myImg" src="C:\Users\Admin\Desktop\GD1401\images\1402-03.png" alt="Snow" style="width:100%">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+      <div class="container">
+        <h2>Cake</h2>
+        <p class="title">Giang Bánh Sinh Nhật (Hòa lạc)</p>
+        <p>Cake is a form of sweet food made from flour, sugar, and other ingredients, that is usually baked.
+        In their oldest forms.</p>
+        <p><button href="https://www.facebook.com/giang.nguyenminh.169" class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img id="myImg" src="C:\Users\Admin\Desktop\GD1401\images\1402-05.png" alt="Snow" style="width:100%">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+      <div class="container">
+        <h2>Milk tea</h2>
+        <p class="title">Chè ngon Hòa Lạc</p>
+        <p>Tea is a dish used as a dessert in Asian cuisine, it originated from China and was spread to Vietnam and many other countries.</p>
+        <p><button href="https://www.facebook.com/hoalac.chengon" class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img id="myImg" src="C:\Users\Admin\Desktop\GD1401\images\1402-06.png" alt="Snow" style="width:100%">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+      <div class="container">
+        <h2>Rice</h2>
+        <p class="title">Kiều Thanh Lam</p>
+        <p>Rice is usually made of non-glutinous rice and added with spices, is the main food almost every day of Southeast Asians.</p>
+        <p><button href="https://www.facebook.com/groups/356018761148436/user/100003626146697/" class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img id="myImg" src="C:\Users\Admin\Desktop\GD1401\images\1402-08.png" alt="Snow" style="width:100%">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+      <div class="container">
+        <h2>Bread</h2>
+        <p class="title">Bánh mỳ Tèo Em</p>
+        <p>Vietnamese bread is a very popular Vietnamese food. Its crust is a loaf of toast with crispy skin and inside is the kernel.
+        <p><button href="https://www.facebook.com/groups/356018761148436/user/100057214116062/" class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img id="myImg" src="C:\Users\Admin\Desktop\GD1401\images\1402-07.png" alt="Snow" style="width:100%">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+      <div class="container">
+        <h2>Fried rice</h2>
+        <p class="title">Cơm rang Long Xuyên</p>
+        <p>Fried rice or fried rice is a cooked rice dish that has been often mixed with other ingredients such as eggs, meat,...</p>
+        <p><button href="https://www.facebook.com/groups/356018761148436/user/100025404973074/" class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="footer">
+  <b>Footer</b>
+  <br>
+  <a href="https://www.facebook.com/FCampFU/?ref=page_internal" class="fa fa-facebook"></a>
+  <a href="https://www.youtube.com/watch?v=g42VaFGZXsY" class="fa fa-youtube"></a>
+</div>

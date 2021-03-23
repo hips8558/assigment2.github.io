@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">        <!-- This is English language --->
+  <head>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+    <meta charset="utf-8">  <!-- It includes ALL the character set of English-->
+                            <!-- AA, BB, aa, bb, 1, 2, !, @, # etc. -->
+
+    <!-- For a Responsive website - you need to input the below mentioned code -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- You need to copy paste few CDM codes -->
+
+    <!-- Latest compiled and minified CSS -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- to make my carasoul images responsive -->
+<style>
+
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+    p
+    {
+  font-family:'PT Sans', sans-serif;
+  text-align: left;
+  font-size: 130%;
+}
+    h4
+    {
+  font-family:'Dancing Script', cursive;
+  text-align: center;
+  font-size: 200%;
+}
+    h3 
+    {
+  font-family:'Dancing Script', cursive;
+  text-align: center;
+  font-size: 300%;
+}
+   h2
+    {
+  font-family:'PT Sans', sans-serif;
+  text-align: left;
+  font-size: 200%;
+}
+   h1
+    {
+  font-family:'PT Sans', sans-serif;
+  text-align: left;
+  font-size: 250%;
+}
+   h5
+    {
+  font-family:'PT Sans', sans-serif;
+  text-align: center;
+  font-size: 100%;
+}
+   h6
+    {
+  font-family:'PT Sans', sans-serif;
+  text-align: center;
+  font-size: 80%;
+}
+   
+
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+   a
+    {
+  font-family:'PT Sans', sans-serif;
+  text-align: center;
+  font-size: 100%;
+}
+b
+    {
+  font-family:'PT Sans', sans-serif;
+  text-align: center;
+  font-size: 150%;
+} 
+
+ #more {display: none;}
+input[type=image], img {
+  margin-top: 0px;
+  margin-bottom: 50px;
+} 
+ .fa {
+  padding: 15px;
+  font-size: 15px;
+  width: 10px;
+  height: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa:hover {
+    opacity: 0.5;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  padding: 20px;
+}
+    td.middle {
+       vertical-align: middle;
+    }
+
+ 
+  </style>
+  <script>
+    function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+  </script>
+
+</head>
+
+<!-- Almost done -- Lets start the program -->
+
+<!--- ----------------------------------------------------------------------------- -->
+<body>
+  
+  <!-- Navbar codes -->
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand/logo -->
+  
+  <!-- Links -->
+  <ul class="navbar-nav ml-auto">  <!-- will do a small styling inorder to move your nav elements to right side of the navbar -->
+    <!-- ML stands for margin left, MR - Margin right -->
+    <!-- The code works opposite here, if you wanna move things to right, use ML and if you wanna move things to left, use MR -->
+
+    <li class="nav-item">
+      <a class="nav-link" href="assigment2.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Invitation.html">Invitation</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Eventscheduce.html">Event scheduce</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="lifeatfu.html">Life at FU</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="foodpreference.html">Food preference</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Register.html">Register</a>
+    </li>
+  </ul>
+
+  <!-- I need a Search input form -->
+   <form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-secondary" type="submit">Search</button>
+  </form>
+</nav>
+<br>
+<br>
+<h1 style="text-align: center;">Invitation</h1>
+  <br>
+      <br>
+       <img src="C:\Users\Admin\Desktop\GD1401\images\01assign2-07-01.png" width="2025">
+      <br>
+      <hr class="w-50">
+      <br>
+<!-- RSVP section -->
+<div class="w3-container w3-center" id="rsvp">
+  <h1 style="text-align: center;">HOPE YOU CAN MAKE IT!</h1>
+  <p style="text-align: center;" class="w3-large">Please respond by October, 2020 </p>
+  <p style="text-align: center" class="w3-xlarge">
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" >JOIN</button>
+  </p>
+</div>
+</section>
+<!-- RSVP modal -->
+<section>
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px;">
+    <div  class="w3-container w3-white w3-center">
+      <h1 style="text-align: center;">CAN YOU COME?</h1>
+      <p style="text-align: center;">We really hope you can make it.</p>
+      <form>
+        <input class="w3-input w3-border" type="text" placeholder="Name(s)" name="name">
+      </form>
+      <p style="text-align: center;"><i>Sincerely, Fcamp</i></p>
+      <div class="w3-row">
+        <div class="w3-half">
+          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-green">Going</button>
+        </div>
+        <div class="w3-half">
+          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-red">Can't come</button>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+</body>
+
+<br>
+<br><br><br>
+<br>
