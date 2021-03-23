@@ -310,6 +310,66 @@ input[type=submit]:hover {
   }
 }
 
+/* hide some text on medium and large screens */
+.hide-md-lg {
+  display: none;
+}
+
+/* bottom container */
+.bottom-container {
+  text-align: center;
+  background-color: #666;
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+  .col {
+    width: 100%;
+    margin-top: 0;
+  }
+  /* hide the vertical line */
+  .vl {
+    display: none;
+  }
+  /* show the hidden text on small screens */
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+  }
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+.fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+/* style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
  
   </style>
   <script>
@@ -406,7 +466,7 @@ span.onclick = function() {
   <div class="carousel-inner">
     <!-- Carasoul slide 1-->
     <div class="carousel-item active">
-      <img src="assigment1.html\1212-01.png">
+      <img src="C:\Users\Admin\Desktop\GD1401\images\1212-01.png">
       <div class="carousel-caption">
         <h3 style="font-size: 100px">F-CAM</h3>
         <h4 style="font-size: 70px">“Are you ready?”</h4>
@@ -568,7 +628,7 @@ span.onclick = function() {
      </div>
 
       <div class="col">
-       <img src="assigment1.html\9-2-09.png" width="330" height="450">
+       <img src="assigment1.htmls\9-2-09.png" width="330" height="450">
      </div>
 
       <div class="col">
@@ -599,7 +659,7 @@ span.onclick = function() {
   <h1 style="text-align: center;">Food preference</h1>
   <br>
   <!-- I need a small line under the heading -- styling element as per my wireframe -->
-  <hr class="w-100">
+  <hr class="w-50">
   <br>
   <br>
 <div class="row">
@@ -755,6 +815,122 @@ span.onclick = function() {
     </div>
   </div>
 </div>
+<br>
+<br>
+<h1 style="text-align: center;">Invitation</h1>
+  <br>
+      <br>
+       <img src="assigment1.html\01assign2-07-01.png" width="2025">
+      <br>
+      <hr class="w-100">
+      <br>
+<!-- RSVP section -->
+<div class="w3-container w3-center" id="rsvp">
+  <h1 style="text-align: center;">HOPE YOU CAN MAKE IT!</h1>
+  <p style="text-align: center;" class="w3-large">Please respond by October, 2020 </p>
+  <p style="text-align: center" class="w3-xlarge">
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" >JOIN</button>
+  </p>
+</div>
+</section>
+<!-- RSVP modal -->
+<section>
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px;">
+    <div  class="w3-container w3-white w3-center">
+      <h1 style="text-align: center;">CAN YOU COME?</h1>
+      <p style="text-align: center;">We really hope you can make it.</p>
+      <form>
+        <input class="w3-input w3-border" type="text" placeholder="Name(s)" name="name">
+      </form>
+      <p style="text-align: center;"><i>Sincerely, Fcamp</i></p>
+      <div class="w3-row">
+        <div class="w3-half">
+          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-green">Going</button>
+        </div>
+        <div class="w3-half">
+          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-red">Can't come</button>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+</body>
+<section>
+ <style type="background-color:#93B874"></style>
+ <br>
+          <h1 style="text-align: center;">Event scheduce</h1>
+      <br>
+      <br>
+       <img style="text-align: center;" src="assigment1.htm\lifefu-01.png" width="2025">
+      <br>
+      <hr class="w-100">
+
+    <div class="container">
+  <div class="row">
+    <!-- Image content in left side -->
+    
+        
+        <!-- Body content in right side-->
+        <div class="col">
+      <br>
+      <h2 style="text-align: center;">When</h2>
+      <br>
+      <p style="text-align: center">Start 8.00 am</span></p>
+      <p style="text-align: center">End 22.00 pm</span></p>
+    </div>
+
+        <div class="col">
+          <br>
+      <h2 style="text-align: center">Where</h2>
+      <br>
+      <p style="text-align: center">Street 30m Hoa Lac Campus</span></p>
+      <p style="text-align: center">FPT University</span></p>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+</section>
+  <br>
+<br>
+<section>
+ <h1 style="text-align: center;">Register</h1>
+  <br>
+    <hr class="w-100">
+
+  <br>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col">
+        <img src="assigment1.html\555-02.png" width="550" height="450">
+      </div>
+      <div class="col">
+        <div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Student Code</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your Student code..">
+
+    <label for="information">Country</label>
+    <select id="information" name="information">
+      <option value="student FU">Viet Nam</option>
+      <option value="Student other">U.S.A</option>
+      <option value="Lecturers">China</option>
+</select>
+
+    <label for="subject">Email</label>
+    <textarea id="subject" name="Email" placeholder="Write something.." style="height:100px"></textarea>
+    <button type="button" class="btn btn-dark">Submit</button>
+<br>
+<br>
 <br>
 <br>
 <br>
